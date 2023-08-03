@@ -1,0 +1,110 @@
+// Falta anidación  de algunas cosas
+
+.modal-contenedor {
+	position: absolute;
+	width: 80%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.hide {
+	display: none;
+}
+
+// Chequear estas otras clases en relacion al código del original profe, qué sentido tiene mantenerlas
+
+
+.modal-active .modal-carrito {
+  margin: 150px;
+}
+
+.modal-carrito {
+  @extend .modal-active;
+  position: relative;
+  background-color: white;
+  width: 75%;
+  padding: 20px;
+  margin-top: -100%;
+  transition: all 0.5s;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+
+  h2 {
+    color: rgb(225, 76, 65);
+    padding-bottom: 5px;
+  }
+
+  #btn-cerrar-carrito {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    color: $secondary-color !important;
+    border: none;
+    background-color: white;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  #btn-cerrar-carrito {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  #btn-cerrar-carrito {
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .producto-precio {
+    padding-top: 10px;
+  }
+}
+
+.productoEnCarrito {
+  border-left: 3px solid $key-color;
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+  margin: 2px 0;
+  padding: 2px 5px;
+  display: flex;
+  justify-content: space-between;
+
+  &:hover {
+    border-left: 5px solid $secondary-color;
+  }
+
+  .boton-eliminar {
+    background-color:$key-color;
+    color: $secondary-color;
+    border: none;
+    font-size: 20px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.boton-eliminar {
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

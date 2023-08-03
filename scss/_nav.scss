@@ -1,0 +1,37 @@
+.nav-animal{
+    background-color: $main-color;
+    position: $nav-foot;
+    z-index: $nav-z;
+
+    li{
+        a{
+            color: $secondary-color;
+            font-size: $nav-size;
+            /*Subrayado animado*/
+            background-image: linear-gradient(currentColor, currentColor);
+            background-position: 0% 100%;
+            background-repeat: no-repeat;
+            background-size: 0% 2px;
+            transition: background-size .3s;
+              &:hover{
+                color: $secondary-color;
+                /*Subrayado animado*/
+                background-size: 100% 2px;
+              }
+        }
+        
+    }
+    button{
+        background-color: $main-color;
+        border: none;
+        span{
+            font-size: $span-size;
+        }
+    }
+    
+    img{
+        width: $favicon-size;
+    }
+    
+}
+

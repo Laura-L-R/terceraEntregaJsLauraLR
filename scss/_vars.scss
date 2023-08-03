@@ -1,0 +1,40 @@
+//variables globales
+
+//colors
+$main-color: rgba(205, 227, 158, .1);
+$secondary-color:  rgb(40, 64, 3);
+$key-color:  rgb(119, 166, 18);
+$dark-color: rgb(13, 13, 13);
+$headlines-color:  rgb(140, 3, 3);
+
+//fonts
+$main-font: 'Lato', sans-serif;
+$headlines-font: 'Teko', sans-serif;
+
+//sizing
+$texts-size: 1.8rem;
+$headlines1-size: 5rem;
+$headlines2-size: 4.4rem;
+$headlines3-size: 2.2rem;
+$line-texts: 2.3rem;
+$figcaption-size: 1.7rem;
+$nav-size: 1.8rem;
+$button-size: 1.3rem;
+$footer-size: 1.2rem;
+$favicon-size: 170px;
+$span-size: 2.6rem;
+
+//font-weigth
+$font-thin: 100;
+$font-light: 300;
+$font-regular: 400;
+$font-bold: 700;
+
+//aligment
+$text-center: center;
+$text-rigth: right;
+$text-justify: justify;
+
+//positions nav y footer
+$nav-foot:  sticky;
+$nav-z: 1;

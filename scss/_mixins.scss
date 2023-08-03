@@ -1,0 +1,72 @@
+//extends
+.contenedor{
+    background-color: $main-color;
+    width: 100%;
+    height: auto;
+    margin: 10px 0px;
+    padding: 10px;
+ }
+
+ .contenedor-contacto{
+    @extend .contenedor;
+    background-color: rgba(119, 166, 18, .1);
+ }
+
+ .button-animation{
+   margin: 3px;
+   border: none;
+   border-radius: 5px;
+   background-color: $key-color;
+   font-size: $button-size;
+   padding: 3px;
+       a{
+           text-decoration: none;
+           color: $secondary-color;
+       }
+       &:hover{
+           background-color: $secondary-color;
+           transition: 1s;
+           a{
+               color: $key-color;
+           }
+       }
+}
+
+.button-animation-enviar{
+   @extend .button-animation;
+   background-color: $secondary-color;
+      a{
+         text-decoration: none;
+         color: $key-color;
+   }
+   &:hover{
+         background-color: $key-color;
+         transition: 1s;
+         a{
+            color: $secondary-color;
+         }
+   }
+}
+
+ //mixins
+ @mixin grid1($columns,$row,$gap,$temp-ar,$jus-it){
+    display: grid;
+    grid-template-columns: $columns;
+    grid-row: $row;
+    gap: $gap;
+    grid-template-areas: $temp-ar;
+    justify-items: $jus-it;
+}
+
+// map textos sizes
+
+$textos-sizes:(
+   'head1-s': $headlines1-size,
+   'head2-s': $headlines2-size,
+   'head3-s':  $headlines3-size,
+   'p-s': $texts-size,
+   'nav-s': $nav-size,
+   'foot-s': $footer-size,
+);
+
+

@@ -1,0 +1,32 @@
+footer{
+    background-color: $dark-color;
+    padding: 10px 20px;
+    width: auto;
+    position:$nav-foot;
+    display: flex;
+    flex-flow: row wrap; 
+    justify-content: space-between;
+    align-items: center;
+
+    svg{
+        width: 30px;
+        fill: $key-color;
+        margin: 5px 5px;
+    }
+
+    a{
+        text-decoration: none;        
+    }
+
+    ul{
+        list-style: none;
+        li{
+            color: $key-color;
+            font-weight: $font-regular;
+            font-size: map-get($map: $textos-sizes, $key:'foot-s');
+            text-align: $text-rigth; 
+            margin-left: 10px;
+        }
+    }   
+
+}

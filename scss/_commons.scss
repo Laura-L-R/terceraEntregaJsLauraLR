@@ -1,0 +1,99 @@
+*{
+    $main-font: 'Lato', sans-serif;
+    $headlines-font: 'Teko', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: $main-color;
+    background-attachment: fixed;
+}
+
+p{
+    font-family: 'Lato', sans-serif;
+    color: $dark-color;
+    font-weight: $font-light;
+    font-size: map-get($map: $textos-sizes, $key:'p-s');
+    line-height: $line-texts;
+    padding-bottom: 10px;
+}
+
+h1{
+    font-size: map-get($map: $textos-sizes, $key:'head1-s');
+    padding-bottom: 10px;
+}
+
+h2{
+    font-size: map-get($map: $textos-sizes, $key:'head2-s');
+}
+
+h3{
+    font-size: map-get($map: $textos-sizes, $key:'head3-s');
+}
+
+h1, h2, h3{
+    font-family: 'Teko', sans-serif;
+    color: $headlines-color;
+    font-weight: $font-regular;
+    margin-bottom: 10px;
+}
+
+main{
+    div{
+        article{
+            a{
+                &:hover{
+                    transform: scale(1.05);
+                    transition: all 1s;
+                    opacity: 0.9;
+                }
+            }
+        }
+    }           
+}
+
+.text-center{
+    text-align: $text-center;
+}
+
+.text-justify{
+    text-align: $text-justify;
+}
+
+.margin-imgs{
+    margin: 10px 10px;   
+}
+
+[src$=".webp"]{
+    border-radius: 10px;
+}
+
+.bg-green2{
+    background-color: rgba(119, 166, 18, .3);
+    border-color: $secondary-color;
+ }
+
+ .border-contacto{
+    border-color: $secondary-color;
+ }
+
+figure figcaption{
+    color: $dark-color;
+    font-size: $figcaption-size;
+    margin: 8px;
+}
+
+.imagenes-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;    
+}
+
+
+
+
